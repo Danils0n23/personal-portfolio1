@@ -9,7 +9,7 @@ const Work = () => {
   return (
     <section className='section' id='work'>
       <div className='conteiner mx-auto'>
-        <div>
+        <div className='flex flex-col lg:flex-row gap-x-10'>
           <div className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             <div>
               <h2 className='h2 leading-tight text-accent'>
@@ -33,10 +33,11 @@ const Work = () => {
               </div>
 
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='tex-3x1 text-white'>Project Title</span>
+                <span className='tex-3x1 text-white'>Portfolio</span>
               </div>
             </div>
           </div>
+          <div className='flex-1'>2</div>
         </div>
       </div>
     </section>
