@@ -9,7 +9,12 @@ const Work = () => {
   return (
     <section className='section' id='work'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row gap-x-10'>
+        <motion.div
+          variants={fadeIn('left', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}
+          className='flex flex-col lg:flex-row gap-x-10'>
           <div className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             <div className='flex-1 flex-col gap-y-10'>
               <h2 className='h2 leading-tight text-accent'>
@@ -38,12 +43,17 @@ const Work = () => {
             </div>
 
           </div>
-          <div className='flex-1 flex flex-col gap-y-10'>
+          <motion.div
+            variants={fadeIn('left', 0.2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 flex flex-col gap-y-10'>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
 
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
 
-              <img className='group-hover:scale-125 transition-all duration-500 z-50' src={img1} alt='' />
+              <img className='group-hover:scale-125 transition-all duration-500 z-50' src={img2} alt='' />
 
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>Software Developer</span>
@@ -57,7 +67,7 @@ const Work = () => {
 
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
 
-              <img className='group-hover:scale-125 transition-all duration-500 z-50' src={img1} alt='' />
+              <img className='group-hover:scale-125 transition-all duration-500 z-50' src={img3} alt='' />
 
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>Software Developer</span>
@@ -68,8 +78,8 @@ const Work = () => {
               </div>
             </div>
 
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
