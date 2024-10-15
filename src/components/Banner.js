@@ -76,11 +76,11 @@ const Banner = () => {
                 <FaGithub />
               </a>
 
-              <a href='https://www.linkedin.com/in/danilson-j%C3%BAnior-bengui-501226260/'>
+              <a href='https://www.linkedin.com/in/danilsonjuniorbengui/'>
                 <FaLinkedin />
               </a>
 
-              <a href='https://wa.me/927981648'>
+              <a href='https://wa.me/+5511941329457'>
                 <FaWhatsapp />
               </a>
 
